@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-     <header class="main-header">
+     <header class="main-header" style="background-image:none">
       <a class="main-header__logo-link" href="#">
-        <img class="main-header__logo" src="" alt="Логотип сайта Device">
+        <img class="main-header__logo" src="images/device-logo.svg" alt="Логотип сайта Device">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -66,7 +67,8 @@
             </ul>
         </header>
         <section class="catalog-products">
-            <h2 class="visually-hidden">Фильтр:</h2>
+            <h2 class="visually-hidden">Фильтр и сортировка</h2>
+            <span class="filter-sorting-heading">Фильтр:</span>
             <span class="filter-sorting-heading">Сортировка:</span>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
@@ -126,7 +128,7 @@
                         </li>
                     </ul>
                   </fieldset>
-                <button class="button" type="submit">Показать</button>
+                <button class="catalog-filter-button" type="submit">Показать</button>
             </form>
             <span class="filter-sorting-heading">Сортировка:</span>
             <select class="select-control">
@@ -144,28 +146,28 @@
         <ul class="product-card-list">
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-image" src="" alt="">
+                    <img class="product-card-image" src="images/product-2.jpg" width="360" height="380" alt="Любительская селфи-палка">
                     <span class="product-card-title">Любительская селфи-палка</span>
                     <span class="product-card-price">500 ₽</span>
                 </a>
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-image" src="" alt="">
+                    <img class="product-card-image" src="images/product-2-1.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                     <span class="product-card-title">Профессиональная селфи-палка </span>
                     <span class="product-card-price">1 500 ₽</span>
                 </a>
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-image" src="" alt="">
+                    <img class="product-card-image" src="images/product-2-2.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                     <span class="product-card-title">Непотопляемая селфи-палка</span>
                     <span class="product-card-price">2 500 ₽</span>
                 </a>
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-image" src="" alt="">
+                    <img class="product-card-image" src="images/product-2-3.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                     <span class="product-card-title">Селфи-палка «Следуй за мной»</span>
                     <span class="product-card-price">1 500 ₽</span>
                 </a>
@@ -179,19 +181,19 @@
                 </a>
             </li>
             <li class="pagination-item">
-                <a class="pagination-link">1</a>
+                <a class="pagination-number">1</a>
             </li>
             <li class="pagination-item">
-                <a class="pagination-link">2</a>
+                <a class="pagination-number">2</a>
             </li>
             <li class="pagination-item">
-                <a class="pagination-link">3</a>
+                <a class="pagination-number">3</a>
             </li>
             <li class="pagination-item">
-                <a class="pagination-link">...</a>
+                <a class="pagination-number">...</a>
             </li>
             <li class="pagination-item">
-                <a class="pagination-link">15</a>
+                <a class="pagination-number">15</a>
             </li>
             <li class="pagination-item">
                 <a class="pagination-link pagination-next">
@@ -202,40 +204,40 @@
         
      </main>
      <footer class="main-footer">
-      <img src="" alt="Описание картинки.">
-      <p class="footer-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <ul class="footer-navigation-list">
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-      <ul class="footer-socials-list">
-        <li class="footer-socials-item">
-          <a class="footer-socials-link">
-            <img src="" alt="Описание картинки.">
-          </a>
-        </li>
-        <li class="footer-socials-item">
-          <a class="footer-socials-link">
-            <img src="" alt="Описание картинки.">
-          </a>
-        </li>
-        <li class="footer-socials-item">
-          <a class="footer-socials-link">
-            <img src="" alt="Описание картинки.">
-          </a>
-        </li>
-      </ul>
-      <a class="footer-academy-link" href="#">
-        <img src="" alt="Описание картинки.">
-      </a>
-     </footer>
+        <img src="images/device-logo.svg" alt="Описание картинки.">
+        <p class="footer-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <ul class="footer-navigation-list">
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <ul class="footer-socials-list">
+          <li class="footer-socials-item">
+            <a class="footer-socials-link">
+              <img src="images/facebook-icon.svg" alt="Описание картинки.">
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a class="footer-socials-link">
+              <img src="images/instagram-icon.svg" alt="Описание картинки.">
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a class="footer-socials-link">
+              <img src="images/twitter-icon.svg" alt="Описание картинки.">
+            </a>
+          </li>
+        </ul>
+        <a class="footer-academy-link" href="#">
+          <img src="images/html-academy-icon.svg" alt="Описание картинки.">
+        </a>
+       </footer>
   </body>
 </html>

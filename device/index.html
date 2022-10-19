@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Заголовок страницы</title>
   </head>
   <body>
      <header class="main-header">
       <a class="main-header__logo-link" href="#">
-        <img class="main-header__logo" src="" alt="Логотип сайта Device">
+        <img class="main-header__logo" src="images/device-logo.svg" alt="Логотип сайта Device">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -52,7 +53,7 @@
       <section class="slider">
         <h2 class="visually-hidden">Слайдер с товарами</h2>
         <button class="slider-button slider-prev"></button>
-        <img class="slider-product" src="" alt="Квадрокоптер с лазером">
+        <img class="slider-product" src="images/slider-pic1.png" width="560" height="560" alt="Квадрокоптер с лазером">
         <button class="slider-button slider-next"></button>
         <span class="slider-product-heading">Порхает как бабочка, жалит как пчела!</span>
         <p class="slider-product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -90,46 +91,46 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img src="" alt="Описание картинки.">
+              <img class="catalog-link-image" src="images/virtual-reality.svg" width="100" height="55" alt="Описание картинки.">
               <span class="catalog-item-name">Виртуальная реальность</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img src="" alt="Описание картинки.">
+              <img class="catalog-link-image" src="images/monopods.svg" alt="Описание картинки.">
               <span class="catalog-item-name">Моноподы для селфи</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img src="" alt="Описание картинки.">
+              <img class="catalog-link-image" src="images/action-cameras.svg" alt="Описание картинки.">
               <span class="catalog-item-name">Экшн-камеры</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img src="" alt="Описание картинки.">
+              <img class="catalog-link-image" src="images/fitness-bracers.svg" alt="Описание картинки.">
               <span class="catalog-item-name">Фитнес-браслеты</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img src="" alt="Описание картинки.">
+              <img class="catalog-link-image" src="images/smart-watches.svg" alt="Описание картинки.">
               <span class="catalog-item-name">Умные часы</span>
             </a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">
-              <img src="" alt="Описание картинки.">
+              <img class="catalog-link-image" src="images/quadrocopters.svg" alt="Описание картинки.">
               <span class="catalog-item-name">Квадрокоптеры</span>
             </a>
           </li>
         </ul>
       </section>
-      <section class="nformation-block">
+      <section class="information-block">
         <ul class="information-list">
           <li class="information-item">
-            <a class="information-link" href="#">Доставка</a>
+            <a class="information-link information-link-current" href="#">Доставка</a>
           </li>
           <li class="information-item">
             <a class="information-link" href="#">Гарантия</a>
@@ -142,12 +143,12 @@
           <li class="information-description-item">
             <h2 class="information-heading">Доставка</h2>
             <p class="information-description-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img src="" alt="Описание картинки.">
+            <img src="images/delivery-man.svg" alt="Описание картинки." width="136" height="164">
           </li>
         </ul>
       </section>
       <div class="delivery-tip">
-        <img src="" alt="Описание картинки.">
+        <img class="delivery-tip-icon" src="images/delivery-icon.svg" alt="Описание картинки.">
         <span class="delivery-tip-text">Доставим редкий товар под заказ</span>
         <img src="" alt="Описание картинки.">
       </div>
@@ -168,7 +169,7 @@
           <p class="about-company-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
           <span class="contacts-subheading">Интернет-магазин «Девайс»</span>
           <p class="about-company-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <span class="contacts-subheading">Время работы</span>
           <p class="about-company-text">пн—пт: с 10:00 до 22:00</p>
           <p class="about-company-text">сб—вс: с 10:00 до 19:00</p>
@@ -190,7 +191,7 @@
       </section>
      </main>
      <footer class="main-footer">
-      <img src="" alt="Описание картинки.">
+      <img src="images/device-logo.svg" alt="Описание картинки.">
       <p class="footer-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <ul class="footer-navigation-list">
         <li class="footer-navigation-item">
@@ -207,22 +208,22 @@
       <ul class="footer-socials-list">
         <li class="footer-socials-item">
           <a class="footer-socials-link">
-            <img src="" alt="Описание картинки.">
+            <img src="images/facebook-icon.svg" alt="Описание картинки.">
           </a>
         </li>
         <li class="footer-socials-item">
           <a class="footer-socials-link">
-            <img src="" alt="Описание картинки.">
+            <img src="images/instagram-icon.svg" alt="Описание картинки.">
           </a>
         </li>
         <li class="footer-socials-item">
           <a class="footer-socials-link">
-            <img src="" alt="Описание картинки.">
+            <img src="images/twitter-icon.svg" alt="Описание картинки.">
           </a>
         </li>
       </ul>
       <a class="footer-academy-link" href="#">
-        <img src="" alt="Описание картинки.">
+        <img src="images/html-academy-icon.svg" alt="Описание картинки.">
       </a>
      </footer>
   </body>
