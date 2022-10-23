@@ -7,54 +7,62 @@
     <title>Заголовок страницы</title>
   </head>
   <body>
-     <header class="main-header">
+     <header class="main-header main-header-wrapper">
       <a class="main-header__logo-link" href="#">
         <img class="main-header__logo" src="images/device-logo.svg" alt="Логотип сайта Device">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <form class="navigation-search-form" method="post" action="https://echo.htmlacademy.ru/">
-              <label class="navigation-search__label">
-                <span class="visually-hidden">Поиск</span>
-                <input class="search-input" type="search" placeholder="Текст поиска" name="header-search">
-              </label>
-              <button type="submit" class="search-button">Найти</button>
-            </form>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link">Войти</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link">Корзина</a>
-          </li>
-        </ul>
-        <ul class="navigation-user">
+          <ul class="navigation-list navigation-wrapper">
+            <li class="navigation-item">
+              <form class="navigation-search-form" method="post" action="https://echo.htmlacademy.ru/">
+                <label class="navigation-search__label">
+                  <span class="visually-hidden">Поиск</span>
+                  <input class="search-input" type="search" placeholder="Текст поиска" name="header-search">
+                </label>
+                <button type="submit" class="search-button">Найти</button>
+              </form>
+            </li>
+            <li class="navigation-item navigation-item-login">
+              <a class="navigation-link">Войти</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link">Сравнить</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link">Корзина</a>
+            </li>
+          </ul>
+        
+        <ul class="navigation-user navigation-wrapper">
           <li class="navigation-item">
             <a class="navigation-link">Каталог товаров</a>
             <button class="navigation-catalog-button"></button>
           </li>
+          <div class="navigation-user-wrapper">
           <li class="navigation-item">
             <a class="navigation-link">Доставка</a>
-          </li><li class="navigation-item">
+          </li>
+          <li class="navigation-item">
             <a class="navigation-link">Гарантия</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link">Контакты</a>
           </li>
+        </div>
         </ul>
       </nav>
      </header>
-     <main class="main-index">
+     <main class="main-index main-container">
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <section class="slider">
+        <div class="slider-wrapper">
         <h2 class="visually-hidden">Слайдер с товарами</h2>
+        <div class="slider-photo-wrapper">
         <button class="slider-button slider-prev"></button>
         <img class="slider-product" src="images/slider-pic1.png" width="560" height="560" alt="Квадрокоптер с лазером">
         <button class="slider-button slider-next"></button>
+      </div>
+        <div class="slider-information-wrapper">
         <span class="slider-product-heading">Порхает как бабочка, жалит как пчела!</span>
         <p class="slider-product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
         <a href="#" class="slider-product-link">Подробнее</a>
@@ -85,6 +93,8 @@
             <p class="slider-product-characteristic-name">Радиус поражения</p>
           </li>
         </ul>
+      </div>
+    </div>
       </section>
       <section class="catalog-block">
         <h2 class="visually-hidden">Разделы каталога</h2>
@@ -128,6 +138,7 @@
         </ul>
       </section>
       <section class="information-block">
+        <div class="information-block-wrapper">
         <ul class="information-list">
           <li class="information-item">
             <a class="information-link information-link-current" href="#">Доставка</a>
@@ -143,16 +154,17 @@
           <li class="information-description-item">
             <h2 class="information-heading">Доставка</h2>
             <p class="information-description-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img src="images/delivery-man.svg" alt="Описание картинки." width="136" height="164">
           </li>
         </ul>
+        <img src="images/delivery-man.svg" alt="Описание картинки." width="136" height="164">
+      </div>
       </section>
       <div class="delivery-tip">
         <img class="delivery-tip-icon" src="images/delivery-icon.svg" alt="Описание картинки.">
         <span class="delivery-tip-text">Доставим редкий товар под заказ</span>
         <img src="" alt="Описание картинки.">
       </div>
-      <section class="about-company">
+      <section class="about-company about-company-wrapper">
         <div class="about-us">
           <h2 class="about-company-headings">О нас</h2>
           <p class="about-company-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -178,6 +190,7 @@
       </section>
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <div class="subscription-wrapper">
         <span class="subscription-heading">Подпишитесь на рассылку</span>
         <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
@@ -188,11 +201,15 @@
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
         <span class="subscription-tip">Это бесплатно</span>
+      </div>
       </section>
      </main>
      <footer class="main-footer">
+      <div class="footer-wrapper">
+        <div class="footer-logo-adress-wrapper">
       <img src="images/device-logo.svg" alt="Описание картинки.">
       <p class="footer-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+    </div>
       <ul class="footer-navigation-list">
         <li class="footer-navigation-item">
           <a class="footer-navigation-link" href="#">Доставка</a>
@@ -225,6 +242,7 @@
       <a class="footer-academy-link" href="#">
         <img src="images/html-academy-icon.svg" alt="Описание картинки.">
       </a>
+    </div>
      </footer>
   </body>
 </html>
