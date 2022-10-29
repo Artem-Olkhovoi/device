@@ -7,33 +7,30 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="main-header main-header-wrapper" style="background-image:none">
+    <header class="main-header main-header-wrapper" style="background-image: none;">
       <a class="main-header__logo-link" href="#">
         <img class="main-header__logo" src="images/device-logo.svg" alt="Логотип сайта Device">
       </a>
       <nav class="navigation">
+        <div class="navigation-search">
+          <form class="navigation-search-form" method="post" action="https://echo.htmlacademy.ru/">
+            <label class="navigation-search__label">
+              <span class="visually-hidden">Поиск</span>
+              <input class="search-input" type="search" placeholder="Текст поиска" name="header-search">
+            </label>
+            <button type="submit" class="search-button">Найти</button>
+          </form>
+        </div>
           <ul class="navigation-list navigation-wrapper">
-            <li class="navigation-item">
-              <form class="navigation-search-form" method="post" action="https://echo.htmlacademy.ru/">
-                <label class="navigation-search__label">
-                  <span class="visually-hidden">Поиск</span>
-                  <input class="search-input" type="search" placeholder="Текст поиска" name="header-search">
-                </label>
-                <button type="submit" class="search-button">Найти</button>
-              </form>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link">Коля Петухов</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link">Выйти</a>
+            <li class="navigation-item navigation-item-login">
+              <a class="navigation-link">Войти</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link">Сравнить</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link">Корзина</a>
-            </li>  
+            </li>
           </ul>
         
         <ul class="navigation-user navigation-wrapper">
@@ -41,7 +38,6 @@
             <a class="navigation-link">Каталог товаров</a>
             <button class="navigation-catalog-button"></button>
           </li>
-          <div class="navigation-user-wrapper">
           <li class="navigation-item">
             <a class="navigation-link">Доставка</a>
           </li>
@@ -50,8 +46,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link">Контакты</a>
-          </li>
-        </div>
+          </li> 
         </ul>
       </nav>
      </header>
@@ -73,7 +68,6 @@
             </ul>
         </header>
         </div>
-        
         <section class="catalog-products">
           <div class="catalog-products-wrapper">
             <h2 class="visually-hidden" hidden>Фильтр и сортировка</h2>
@@ -143,18 +137,20 @@
             <div class="catalog-right-column">
               <div class="sorting-wrapper">
                 <span class="filter-sorting-heading">Сортировка:</span>
-              <select class="select-control">
+                <select class="select-control">
                   <option value="popular">Популярные</option>
                   <option value="cheap">Сначала дешёвое</option>
                   <option value="expensive">Сначала дорогое</option>
-              </select>
-              <a href="#" class="button">
+                </select>
+              <div class="sorting-buttons-container">
+                <a href="#" class="sorting-button">
                   <span class="visually-hidden">Показать список</span>
-              </a>
-              <a class="button" href="#">
+                </a>
+                <a class="sorting-button" href="#">
                   <span class="visually-hidden">Показать карточки</span>
-              </a>
+                </a>
               </div>
+            </div>
   
               <div class="product-card-list-wrapper">
                 <ul class="product-card-list">
@@ -188,33 +184,32 @@
                   </li>
               </ul>
               <button class="product-show-more" type="button">Загрузить ещё</button>
-              <ul class="pagination">
-                  <li class="pagination-item">
-                      <a class="pagination-link pagination-prev">
-                          <span class="pagination-button">Назад</span>
-                      </a>
-                  </li>
-                  <li class="pagination-item">
-                      <a class="pagination-number">1</a>
-                  </li>
-                  <li class="pagination-item">
-                      <a class="pagination-number">2</a>
-                  </li>
-                  <li class="pagination-item">
-                      <a class="pagination-number">3</a>
-                  </li>
-                  <li class="pagination-item">
-                      <a class="pagination-number">...</a>
-                  </li>
-                  <li class="pagination-item">
-                      <a class="pagination-number">15</a>
-                  </li>
-                  <li class="pagination-item">
-                      <a class="pagination-link pagination-next">
-                          <span class="pagination-button">Вперёд</span>
-                      </a>
-                  </li>
-              </ul>
+              
+              <div class="pagination-wrapper">
+                <a class="pagination-link pagination-prev">
+                  <span class="pagination-button">Назад</span>
+                </a>
+                <ul class="pagination">
+                    <li class="pagination-item">
+                        <a class="pagination-number">1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-number">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-number">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-number">...</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-number">15</a>
+                    </li>
+                </ul>
+                <a class="pagination-link pagination-next">
+                  <span class="pagination-button">Вперёд</span>
+                </a>
+              </div>
               </div>
             </div>
             
